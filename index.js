@@ -1,4 +1,9 @@
 const inquirer = require('inquirer')
-const questions = require('./questions')
+const questions = require('./lib/questions')
 
-console.log(questions)
+inquirer
+    .prompt(questions)
+    .then((answers)=>{
+    const {text, textColor, shape, shapeColor} = answers;
+    console.log(text,textColor,shape,shapeColor);
+});
