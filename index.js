@@ -1,7 +1,8 @@
 const inquirer = require('inquirer')
 const questions = require('./lib/questions')
 const {appendFile} = require('fs')
-const generateSvg = require('./lib//GenerateSVG')
+const generateSvg = require('./lib//GenerateSVG');
+const { createDiffieHellmanGroup } = require('crypto');
 
 inquirer
     .prompt(questions)
@@ -9,7 +10,7 @@ inquirer
     const {text, textColor, shape, shapeColor} = answers;
     
     const logo = generateSvg(text, textColor, shape, shapeColor)
-    console.log(logo)
-    //appendFile('logo.svg',[])
+    
+    appendFile('logo.svg',logo, (error) => {(error) ? console.error(error) : ''})
     console.log('\n'+'Generated logo.svg');
 });
