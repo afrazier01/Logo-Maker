@@ -3,6 +3,7 @@ const questions = require('./lib/questions')
 const {appendFile} = require('fs')
 const generateSvg = require('./lib//GenerateSVG');
 const { createDiffieHellmanGroup } = require('crypto');
+const { Triangle } = require('./lib/shapes');
 
 inquirer
     .prompt(questions)
@@ -14,3 +15,4 @@ inquirer
     appendFile('logo.svg',logo, (error) => {(error) ? console.error(error) : ''})
     console.log('\n'+'Generated logo.svg');
 });
+
