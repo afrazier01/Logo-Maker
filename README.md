@@ -4,7 +4,7 @@
 
   ## Description
   The challenge for this project was to build a command-line application that generates a logo as a scalable vector graphic. The application prompts the user for a shape, color, and some text before creating the file.
-  > Note: Take a look [here](https://drive.google.com/file/d/140xU2Gs921f6ToGszoNCIU6u7CosDExO/view) to see how you can create your own logo!
+  > Note: Take a look [here](https://drive.google.com/file/d/1-Q6Oi-pvid_QlBzQL9vmXX12b50zUOoT/view) to see how you can create your own logo!
 
   ## Table of Contents
   1. [Installation](#installation)
